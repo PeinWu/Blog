@@ -1,0 +1,52 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - 博客</title>
+    {% else %}
+    <title>Pein</title>
+    {% endif %}
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+</head>
+<body>
+<header class="header">
+  <ul>
+    <li class="cor-1"></li>
+    <li class="cor-2"></li>
+    <li class="cor-3"></li>
+    <li class="cor-4"></li>
+    <li class="cor-5"></li>
+  </ul>
+  </header>
+<div class="wrap">
+
+
+<nav class="menu">
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Archive</a>
+    </li>
+    <li>
+      <a href="#">About me</a>
+    </li>
+  </ul>
+  </nav>
+    <aside class="sidebar">
+      <div class="widget">
+      <h2>Michael</h2>
+      <p>Hello, my name’s <b>Peinwu</b>. I’m 23 years old. I live in <b>Beijing (China)</b>. I am a <b>Data analysis</b>.<br> Contact Me:<br><b>peinwu@sina.com</b></p>
+      </div>
+      <div class="widget">
+      <h2>Title</h2>
+      <p>Life is short, I use python</p>
+      </div>
+
+  </aside>
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Pein</title>
+    {% else %}
+    <title>Pein</title>
+    {% endif %}
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+</head>
+<body>
+<div id="wrapper">
+  <div id="info">
+    <div id="info-content">
+      <h1><strong>Peinwu</strong> ML</h1>
+      <p>ML</p>
+    </div>
+  </div>
+</div><!-- #wrapper -->
+</body>
+</html>
+
+
